@@ -1,0 +1,19 @@
+什么是 Foundation？
+    Foundation 是一个免费的前端框架，用于快速开发。
+    Foundation 包含了 HTML 和 CSS 的设计模板，提供多种 Web 上的 UI 组件，如表单、按钮、Tabs 等等。同时也提供了多种 JavaScript 插件。
+    Foundation 移动优先，可创建响应式网页。
+    Foundation 适用于初学者和专业人士。
+    Foundation 已使用在 Facebook, eBay, Samsung, Amazon, Disney等。
+
+使用菜鸟教程官网提供的CDN（推荐）：
+<!-- css 文件 -->
+<link rel="stylesheet" href="http://static.runoob.com/assets/foundation-5.5.3/foundation.min.css">
+
+<!-- jQuery 库 -->
+<script src="http://static.runoob.com/assets/jquery/2.0.3/jquery.min.js"></script>
+
+<!-- JavaScript 文件 -->
+<script src="http://static.runoob.com/assets/foundation-5.5.3/js/foundation.min.js"></script>
+
+<!-- modernizr 文件 -->
+<script src="http://static.runoob.com/assets/foundation-5.5.3/js/vendor/modernizr.js"></script>
