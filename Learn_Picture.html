@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Learn Picture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css 文件 -->
+    <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-5.5.3/foundation.min.css">
+    <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-icons/foundation-icons.css">
+    <!-- jQuery 库 -->
+    <script src="http://static.runoob.com/assets/jquery/2.0.3/jquery.min.js"></script>
+    <!-- JavaScript 文件 -->
+    <script src="http://static.runoob.com/assets/foundation-5.5.3/js/foundation.min.js"></script>
+    <!-- modernizr 文件 -->
+    <script src="http://static.runoob.com/assets/foundation-5.5.3/js/vendor/modernizr.js"></script>
+</head>
+<body>
+<p>响应式图片
+
+    Foundation 中图片默认是响应式的。我们可以在实例页面重置浏览器大小来查看图片缩放效果。</p>
+    <div style="padding: 30px;">
+        <h3>缩略图</h3>
+        <p>在 &lt;img&gt; 元素外添加 &lt;a&gt; 元素将图片作为一个锚链接。
+            在 &lt;a&gt; 标签中添加 .th 类将图片设置为缩略图。 鼠标移动到上面会显示一个浅蓝色外框:</p>
+        <a href="#" class="th"  >
+            <img src="images/demo1.jpg" alt="Paris" width="400" height="300">
+        </a>
+    </div>
+
+
+    <h3>简洁的弹窗</h3>
+    <p> Foundation 可以很容易实现图片弹窗.要创建一个弹窗可以在 &lt;ul&gt; 元素上添加 .clearing-thumbs 类及 data-clearing 属性。在 &lt;ul&gt; 内添加图片列表。
+    注意: 图片弹窗需要 JavaScript。所以使用它前需要初始化 Foundation JS。</p>
+<ul class="clearing-thumbs" data-clearing>
+    <li><a href="images/demo1.jpg" class="th"><img src="images/demo1.jpg" width="200" height="100"></a></li>
+    <li><a href="images/demo1.jpg" class="th"><img src="images/demo1.jpg" width="200" height="100"></a></li>
+    <li><a href="images/demo1.jpg" class="th"><img src="images/demo1.jpg" width="200" height="100"></a></li>
+</ul>
+
+    <h3>图片文本描述</h3>
+    <p>可以添加 data-caption 属性到每个图片来设置图片的描述:</p>
+    <ul class="clearing-thumbs" data-clearing>
+        <li><a href="images/demo1.jpg" class="th"><img data-caption="The Pulpit Rock" src="images/demo1.jpg"  width="200" height="100"></a></li>
+        <li><a href="images/demo1.jpg" class="th"><img data-caption="Sunrise Skies" src="images/demo1.jpg" width="200" height="100"></a></li>
+        <li><a href="images/demo1.jpg" class="th"><img data-caption="Northern Lights" src="images/demo1.jpg" width="200" height="100"></a></li>
+    </ul>
+
+    <h3>只显示一张缩略图</h3>
+    当你需要实现只显示一张缩略图时你可以在&lt;ul&gt; 中使用 .clearing-feature 类并在&lt;li&gt; 中使用 .clearing-featured-img 类。
+    <ul class="clearing-thumbs clearing-feature" data-clearing>
+        <li><a href="images/demo1.jpg" class="th"><img data-caption="The Pulpit Rock" src="images/demo1.jpg" width="200" height="100"></a></li>
+        <li><a href="images/demo1.jpg" class="th"><img data-caption="Sunrise Skies" src="images/demo1.jpg" width="200" height="100"></a></li>
+        <li class="clearing-featured-img"><a href="images/demo1.jpg" class="th"><img data-caption="Northern Lights" src="images/demo1.jpg" width="200" height="100"></a></li>
+    </ul>
+</body>
+<script>
+    $(document).ready(function() {
+        $(document).foundation();
+    })
+</script>
+</html>

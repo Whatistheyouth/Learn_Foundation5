@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css 文件 -->
+    <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-5.5.3/foundation.min.css">
+    <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-icons/foundation-icons.css">
+    <!-- jQuery 库 -->
+    <script src="http://static.runoob.com/assets/jquery/2.0.3/jquery.min.js"></script>
+    <!-- JavaScript 文件 -->
+    <script src="http://static.runoob.com/assets/foundation-5.5.3/js/foundation.min.js"></script>
+    <!-- modernizr 文件 -->
+    <script src="http://static.runoob.com/assets/foundation-5.5.3/js/vendor/modernizr.js"></script>
+</head>
+<body>
+<h3>Foundation 下拉菜单</h3>
+<a href="#" data-dropdown="id00" class="button dropdown">Dropdown Button</a>
+
+<!-- Dropdown content -->
+<ul id="id00" data-dropdown-content class="f-dropdown">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+</ul>
+<blockquote>
+    实例解析
+    .dropdown 类为按钮添加一个向下的箭头符号"图标.使用按钮或链接的 data-dropdown="id" 属性来打开下拉菜单。
+    id 值需要与下拉菜单的内容 (id01) 匹配。在 &lt;div&gt;, &lt;nav&gt;, &lt;ul&gt; 中添加 .f-dropdown 类和 data-dropdown-content 属性来创建下拉菜单的内容。
+    最后初始化 Foundation JS。注意: 在小屏幕上，所有的下拉菜单的宽度是100%。
+</blockquote>
+
+
+    <h3>下拉菜单尺寸</h3>
+    <p>使用 .tiny, .small, .medium, .large 或 .mega 来修改下拉菜单的宽度。
+    注意: 在小屏幕上，所有的下拉菜单的宽度是100%。</p>
+
+<!-- Tiny Dropdown: max-width is 200px -->
+<a href="#" data-dropdown="id01" class="button dropdown">Tiny</a>
+<ul id="id01" data-dropdown-content class="f-dropdown tiny">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+</ul>
+<br>
+
+    <!-- Small Dropdown: max-width is 300px  -->
+    <a href="#" data-dropdown="id02" class="button dropdown">Small</a>
+    <ul id="id02" data-dropdown-content class="f-dropdown small">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+    <br>
+
+    <!-- Medium Dropdown: max-width is 500px  -->
+    <a href="#" data-dropdown="id03" class="button dropdown">Medium</a>
+    <ul id="id03" data-dropdown-content class="f-dropdown medium">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+    <br>
+
+    <!-- Large Dropdown: max-width is 800px  -->
+    <a href="#" data-dropdown="id04" class="button dropdown">Large</a>
+    <ul id="id04" data-dropdown-content class="f-dropdown large">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+    <br>
+
+    <!-- Mega Dropdown: 100% width -->
+    <a href="#" data-dropdown="id05" class="button dropdown">Mega</a>
+    <ul id="id05" data-dropdown-content class="f-dropdown mega">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+
+    <h3>下拉菜单边距</h3>
+    <p>可以使用 .content 类为下拉菜单添加内边距：</p>
+<h2>下拉菜单内容项</h2>
+<a href="#" data-dropdown="id06" class="button dropdown">没有内边距</a>
+<ul id="id06" data-dropdown-content class="f-dropdown">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+</ul>
+
+<a href="#" data-dropdown="id07" class="button dropdown">有内边距</a>
+<ul id="id07" data-dropdown-content class="f-dropdown content">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+</ul>
+
+<h3>其他实例</h3>
+下拉菜单中添加多媒体元素：
+<a href="#" data-dropdown="id09" class="button dropdown">Dropdown Button</a>
+<div id="id09" data-dropdown-content class="f-dropdown medium content">
+    <h4>Paris Title</h4>
+    <p>Some text.. some text..</p>
+    <img src="images/demo1.jpg" alt="Paris" width="400" height="300">
+    <p>Paris, je t'aime.</p>
+</div>
+
+<h3>下拉菜单方向</h3>
+<h6>默认情况下下拉菜单在底部，可以通过添加 data-options="align:left|right|top" 来修改其方向：</h6>
+
+<h2>下拉菜单方向</h2>
+<a href="#" data-dropdown="id010" data-options="align:right" class="button dropdown">右边</a>
+    <ul id="id010" data-dropdown-content class="f-dropdown">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+
+    <a href="#" data-dropdown="id011" data-options="align:top" class="button dropdown">顶部</a>
+    <ul id="id011" data-dropdown-content class="f-dropdown">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+
+    <a href="#" data-dropdown="id012" data-options="align:bottom" class="button dropdown">底部</a>
+    <ul id="id012" data-dropdown-content class="f-dropdown">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+
+    <a href="#" data-dropdown="id013" data-options="align:left" class="button dropdown">左边</a>
+    <ul id="id013" data-dropdown-content class="f-dropdown">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+
+    <h3>下拉菜单触发条件</h3>
+    <p>默认情况下，下拉菜单在点击按钮后显示。如果你需要在鼠标移动上去后显示，可以在按钮上使用 data-options="is_hover:true" 属性:</p>
+    <a href="#" data-dropdown="id014" data-options="is_hover:true" class="button dropdown">Hover over me</a>
+    <ul id="id014" data-dropdown-content class="f-dropdown">
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    </ul>
+
+<h3>分割按钮</h3>
+我们可以在按钮上添加 .split 类来设置一个分割效果的按钮，分割后会在 &lt;span&gt; 元素上生成一个方向向下的图标按钮:
+<p>Firefox不支持button 改用a标签</p>
+<div style="padding:20px;">
+    <h2>分割按钮</h2>
+    <a class="button split" >Split Button <span data-dropdown="id015" data-options="align:top"></span></a>
+    <ul id="id015" data-dropdown-content class="f-dropdown">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+    </ul>
+</div>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $(document).foundation();
+    })
+</script>
+</html>

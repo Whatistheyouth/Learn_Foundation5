@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Progress Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css 文件 -->
+    <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-5.5.3/foundation.min.css">
+    <link rel="stylesheet" href="http://static.runoob.com/assets/foundation-icons/foundation-icons.css">
+    <!-- jQuery 库 -->
+    <script src="http://static.runoob.com/assets/jquery/2.0.3/jquery.min.js"></script>
+    <!-- JavaScript 文件 -->
+    <script src="http://static.runoob.com/assets/foundation-5.5.3/js/foundation.min.js"></script>
+    <!-- modernizr 文件 -->
+    <script src="http://static.runoob.com/assets/foundation-5.5.3/js/vendor/modernizr.js"></script>
+    <style>
+        .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <p>我们可以在 &lt;div&gt; 元素中使用 .progress 类来创建进度条， .meter 类用于子元素(&lt;span&gt;>)。我们可以在 &lt;span&gt; 元素中设置进度百分比，如下所示：</p>
+    <div class="progress">
+        <span class="meter" style="width:70%"></span>
+    </div>
+    <div class="progress alert">
+        <span class="meter" style="width:90%"></span>
+    </div>
+
+    <h3>圆角进度条</h3>
+    <p>.radius 和 .round 类用于为进度条添加圆角效果：</p>
+    <div class="progress">
+        <span class="meter" style="width:50%"></span>
+    </div>
+
+    <div class="progress radius">
+        <span class="meter" style="width:60%"></span>
+    </div>
+
+    <div class="progress round">
+        <span class="meter" style="width:70%"></span>
+    </div>
+
+    <h3>进度条尺寸</h3>
+    <p>可以使用 .small-num 或 .large-num 来修改进度条的宽度， num 是一个数字在 1(8.33%) 和 12(default (100%)) 之间:</p>
+    <div class="progress large-1">
+        <span class="meter" style="width:50%"></span>
+    </div>
+
+    <div class="progress large-6">
+        <span class="meter" style="width:50%"></span>
+    </div>
+
+    <div class="progress small-9">
+        <span class="meter" style="width:50%"></span>
+    </div>
+
+    <div class="progress large-11">
+        <span class="meter" style="width:50%"></span>
+    </div>
+
+    <!-- Default width -->
+    <div class="progress small-12">
+        <span class="meter" style="width:50%"></span>
+    </div>
+
+    <h3>进度条标签</h3>
+    <h6>可以使用 CSS 为进度条添加标签。以下实例中我们添加了&lt;span&&gt; 元素来显示百分比:</h6>
+
+    <div class="progress">
+  <span class="meter" style="position:relative;width:75%">
+    <span class="percentage">75%</span>
+  </span>
+    </div>
+
+    <div class="progress success">
+  <span class="meter" style="position:relative;width:50%">
+    <span class="percentage">50%</span>
+  </span>
+    </div>
+
+    <div class="progress alert">
+  <span class="meter" style="position:relative;width:25%">
+    <span class="percentage">25%</span>
+  </span>
+    </div>
+</body>
+</html>
